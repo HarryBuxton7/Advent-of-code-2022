@@ -4,7 +4,7 @@ let currentTotal = 0
 let biggestTotal = 0
 
 let listOfNumbers = []
-lineReader.eachLine('./input.txt',(line,last)=>{
+lineReader.eachLine('./input1.txt',(line,last)=>{
     if (isNaN(parseInt(line)) != true){
         currentTotal = currentTotal + parseInt(line)
         if (biggestTotal < currentTotal){
