@@ -22,7 +22,7 @@ lineReader.eachLine('./input8.txt',(line,last)=>{
                 }  
             }
         }
-        console.log(visibleTrees)
+        console.log(visibleTrees) //answer: 1736
     }
 })
 
