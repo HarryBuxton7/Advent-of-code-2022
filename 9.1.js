@@ -27,7 +27,7 @@ lineReader.eachLine('./input9.txt',(line,last)=>{
         }
         
         if (Hcoordinates[0] >= Tcoordinates[0] + 2|| Hcoordinates[0] <= Tcoordinates[0] - 2 || Hcoordinates[1] >= Tcoordinates[1] + 2 || Hcoordinates[1] <= Tcoordinates[1] - 2){
-            //head and tail are touching, move tail
+            //head and tail are not touching, move tail
 
             if (Hcoordinates[0] == Tcoordinates[0]){ //head and tail same x axis, move tail in straight line
                 if (Hcoordinates[1] > Tcoordinates[1]){ //move left or right
@@ -62,7 +62,7 @@ lineReader.eachLine('./input9.txt',(line,last)=>{
                 }
             }
         } else {
-            //head and tail are not touching, don't move tail
+            //head and tail are touching, don't move tail
         }
         
         //register tail coordinates in hash map:
